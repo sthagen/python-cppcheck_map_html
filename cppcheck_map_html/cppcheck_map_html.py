@@ -1,4 +1,3 @@
-#! /usr/bin/env python
 # -*- coding: utf-8 -*-
 # pylint: disable=line-too-long
 """Transform and Retarget the cppcheck text output for errors and warnings into HTML page.
@@ -170,7 +169,7 @@ def map_findings(stream, project, repo, commit):
         yield f'<h2>Warnings from Job Execution</h2><pre>{nl.join(job_warnings)}</pre>'
 
 
-def main(argv=None):
+def process(argv=None):
     """Do the mapping."""
     if len(argv) != 4:
         print(f"Expected four arguments (project, repo, branch, commit) and input via stdin, got instead {argv}")
@@ -183,7 +182,3 @@ def main(argv=None):
         print(finding)
     print(PAGE_POSTFIX)
     return 0
-
-
-if __name__ == "__main__":  # pragma: no cover
-    sys.exit(main(sys.argv[1:]))
