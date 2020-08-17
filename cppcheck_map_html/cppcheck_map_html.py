@@ -172,7 +172,8 @@ def map_findings(stream, project, repo, commit):
 def process(argv=None):
     """Do the mapping."""
     if len(argv) != 4:
-        print(f"Expected four arguments (project, repo, branch, commit) and input via stdin, got instead {argv}")
+        print(f"Usage: script project repo branch commit < text_report > html_report")
+        print(f"Received ({argv}) argument vector")
         return 2
 
     project, repo, branch, commit = argv
