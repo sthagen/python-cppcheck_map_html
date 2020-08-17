@@ -1,0 +1,8 @@
+[a/b/c/d.h:42]: (information) The line is short.
+[a/b/c/d.h:31] -> [a/b/c/d.cpp:23]: (warning) Different order in declaration 'foo, bar, baz' and definition 'bar, baz, foo'.
+[c/d.h:31]: (error) Printf format string has 3 parameters and only 2 values provided.
+[d/e.h:44]: (warning) Attribute lalala not initialized in constructor.
+[d/e.h:55]: (performance) Use prefix ++/-- for user defined typs.
+[d/f.h]: (style) Value of 'foo' is overwrittten before use.
+[d/f.cpp]: (style, inconclusive) Parameter 'msg' is never used.
+[e/f/g/h/i.cpp]: (portability) Memset is used on double type.
