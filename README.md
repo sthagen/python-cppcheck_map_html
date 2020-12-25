@@ -4,4 +4,4 @@ Prototype of filter alternative to checkcpp included filter.
 ## Status
 Experimental or non-working, sorry.
 
-Note: The default branch (with special meaning for github and gitlab users) has the name default 😉
+**Note**: The name of the default branch is `default`.
